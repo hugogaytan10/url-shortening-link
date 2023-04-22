@@ -6,10 +6,30 @@ import { useState } from 'react';
 function Nav() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className='w-full p-5 flex justify-between'>
+    <nav className='w-full p-5 flex justify-between lg:justify-start'>
       <h3 className='font-extrabold text-3xl'>Shortly</h3>
-      <div className='self-center text-3xl text-neutralGray hover:cursor-pointer' onClick={()=>{setOpen(!open)}}><FontAwesomeIcon icon={faBars}/></div>
+      {
+        window.screen.width < 380 &&
+        <div className='self-center text-3xl text-neutralGray hover:cursor-pointer' onClick={() => { setOpen(!open) }}><FontAwesomeIcon icon={faBars} /></div>
+      }
 
+      {
+        window.screen.width > 375 &&
+        <div className='ml-10 self-center'>
+          <ul className='flex gap-8'>
+            <li className='text-textGray'>Features</li>
+            <li className='text-textGray'>Pricing</li>
+            <li className='text-textGray'>Resources</li>
+          </ul>
+        </div>
+      }
+      {
+        window.screen.width > 375 &&
+        <div className='ml-auto flex self-center gap-10'>
+          <p className='text-textGray'>Login</p>
+          <button className='w-24 rounded-full bg-primaryCyan p-1 text-gray-50 hover:brightness-105'>Sign Up</button>
+        </div>
+      }
       {
         open &&
         <div className='p-5 fixed z-10 top-16 bg-primaryDarkViolet w-11/12 rounded-lg'>

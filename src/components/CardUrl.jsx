@@ -44,7 +44,7 @@ export const CardUrl = (props) => {
                             <p className='text-left p-2 lg:mr-auto'>{card.original}</p>
                             <span className='h-px w-full block bg-slate-400 m-auto lg:hidden'></span>
                             <p className='text-left p-2 text-primaryCyan lg:mr-8'>{card.acortada}</p>
-                            <button onClick={() => { clickCopy(card.index, card.acortada) }} className={`w-11/12 block m-auto  rounded-md h-10 text-gray-100 font-extrabold ${(card.estado == 'Copy') ? 'bg-primaryCyan' : 'bg-darkBlue'} lg:w-1/12 lg:m-0`}>{card.estado}</button>
+                            <button onClick={() => { clickCopy(card.index, card.acortada) }} className={`w-11/12 block m-auto  rounded-md h-10 text-gray-100 font-extrabold ${(card.estado == 'Copy') ? 'bg-primaryCyan' : 'bg-darkBlue'} lg:w-1/12 lg:m-0 hover:brightness-105`}>{card.estado}</button>
                         </div>
                     )
                 })

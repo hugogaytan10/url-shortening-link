@@ -48,7 +48,7 @@ export const Shorter = () => {
                 <img src={window.screen.width > 375 ? fondoDesk : fondo} className="w-full absolute right-0 rounded-tr-lg lg:object-cover" alt='foto' />
                 <input ref={input} placeholder='Shorten a link here...' className='p-4 absolute bg-white h-11 w-11/12 rounded-md top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-7/12 lg:left-1/3 lg:top-1/2' />
                 <span className='error text-red-400 h-10 block absolute w-11/12 rounded-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:top-3/4' >{message}</span>
-                <button onClick={() => { validar() }} className='absolute bg-primaryCyan text-gray-100 font-extrabold w-11/12 h-12 rounded-md  bottom-4 left-1/2 -translate-x-1/2 -translate-y-4 lg:w-2/12 lg:top-1/2 lg:right-0 lg:translate-x-full lg:-translate-y-1/2 lg:bottom-0'>Shorten It!</button>
+                <button onClick={() => { validar() }} className='absolute bg-primaryCyan text-gray-100 font-extrabold w-11/12 h-12 rounded-md  bottom-4 left-1/2 -translate-x-1/2 -translate-y-4 lg:w-2/12 lg:top-1/2 lg:right-0 lg:translate-x-full lg:-translate-y-1/2 lg:bottom-0 hover:brightness-105'>Shorten It!</button>
             </div>
             {
                 cards.length > 0 &&

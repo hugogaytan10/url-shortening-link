@@ -11,7 +11,7 @@ export const MainInformation = () => {
                 <h3 className='text-4xl font-black text-center lg:text-6xl lg:text-left'>More than just shorter links</h3>
                 <p className='text-textGray w-full text-center mt-2 mb-8 lg:text-left lg:text-2xl'>Build your brand’s recognition and get detailed insights
                     on how your links are performing.</p>
-                <button className='w-1/2 bg-primaryCyan rounded-full p-4 text-white font-bold lg:w-1/3'>Get Started</button>
+                <button className='w-1/2 bg-primaryCyan rounded-full p-4 text-white font-bold lg:w-1/3 hover:brightness-105'>Get Started</button>
             </div>
             <Shorter/>
         </div>
