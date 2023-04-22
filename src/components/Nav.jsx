@@ -1,13 +1,14 @@
-import '../fontawesome';
+
 import '../App.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 function Nav() {
   const [open, setOpen] = useState(false);
   return (
     <nav className='w-full p-5 flex justify-between'>
       <h3 className='font-extrabold text-3xl'>Shortly</h3>
-      <div className='self-center text-3xl text-neutralGray hover:cursor-pointer' onClick={()=>{setOpen(!open)}}><FontAwesomeIcon icon='bars' /></div>
+      <div className='self-center text-3xl text-neutralGray hover:cursor-pointer' onClick={()=>{setOpen(!open)}}><FontAwesomeIcon icon={faBars}/></div>
 
       {
         open &&
