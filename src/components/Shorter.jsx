@@ -25,6 +25,8 @@ export const Shorter = () => {
         let url = 'https://api.shrtco.de/v2/shorten?url=' + value;
         const res = await fetch(url, {
             method: 'GET',
+            mode:'cors',
+            cache: 'default',
             headers: {
                 'Content-Type': 'application/json'
             }
